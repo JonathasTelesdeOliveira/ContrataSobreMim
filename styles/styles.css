@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+   /* height: 100vh; */
+    background-color: #000000;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+.conteiner{
+    padding: 6% 11%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.conteiner_conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.conteiner_conteudo_titulo{
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+.conteiner_conteudo_texto{
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.conteiner_link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.conteiner_link_subtitulo{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #20FA2A;
+
+}
+.conteiner_link_links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    color: #20FA2A;
+    border: 5px solid  #20FA2A;
+    width: 358px;
+    text-align:center;
+    padding: 21.5px 0;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+.conteiner_link_links:hover{
+    background-color: #272727;
+    padding: 2.5% 0;
+    border: 10px double #20FA2A;
+    box-sizing: border-box;
+}
+.rodape{
+    color:#000000;
+    background-color: #20FA2A;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+.cabecalho{
+    padding: 1% 0 0 11%;
+}
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+    justify-content: left;
+    background-color: #272727;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+.cabecalho_menu_link{
+    color:  #20FA2A;
+    padding: 0.3%;
+    background-color: #000000;
+    border: 3px solid #20FA2A;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+.cabecalho_menu_link:hover{
+    background-color: #272727;
+    padding: 0.2%;
+    border: 3px double #20FA2A;
+    box-sizing: border-box;
+}
