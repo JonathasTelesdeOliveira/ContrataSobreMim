@@ -1,17 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --cor-primaria:  #000000;
+    --cor-secundaria: #ffffff;
+    --cor-tercearia: #08CB00;
+    --cor-hover: #253900;
+
+    --fonte-principal: "Krona One", sans-serif; 
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
 *{
     margin: 0px;
     padding: 0px;
 }
 body{
    /* height: 100vh; */
-    background-color: #000000;
+    background-color: var(--cor-primaria);
     box-sizing: border-box;
-    color: #ffffff;
+    color: var(--cor-secundaria);
 }
 .conteiner{
-    padding: 6% 11%;
+    padding: 5% 11%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,11 +33,14 @@ body{
 }
 .conteiner_conteudo_titulo{
     font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-principal)
+}
+.titulo_destaque{
+    color: var(--cor-hover)
 }
 .conteiner_conteudo_texto{
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
 }
 
 .conteiner_link{
@@ -39,10 +51,10 @@ body{
     align-items: center;
 }
 .conteiner_link_subtitulo{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
     font-weight: 600;
     font-size: 24px;
-    color: #20FA2A;
+    color: var(--cor-tercearia);
 
 }
 .conteiner_link_links{
@@ -50,8 +62,8 @@ body{
     justify-content: center;
     gap: 20px;
 
-    color: #20FA2A;
-    border: 5px solid  #20FA2A;
+    color: var(--cor-tercearia);
+    border: 5px solid var(--cor-tercearia);
     width: 358px;
     text-align:center;
     padding: 21.5px 0;
@@ -59,21 +71,13 @@ body{
     border-radius: 8px;
     font-weight: 400;
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
 }
 .conteiner_link_links:hover{
     background-color: #272727;
     padding: 2.5% 0;
-    border: 10px double #20FA2A;
+    border: 10px double var(--cor-tercearia);
     box-sizing: border-box;
-}
-.rodape{
-    color:#000000;
-    background-color: #20FA2A;
-    text-align: center;
-    padding: 10px;
-    font-size: 24px;
-    font-family: "Montserrat", sans-serif;
 }
 .cabecalho{
     padding: 1% 0 0 11%;
@@ -81,23 +85,29 @@ body{
 .cabecalho_menu{
     display: flex;
     gap: 80px;
-    justify-content: left;
-    background-color: #272727;
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
 }
 .cabecalho_menu_link{
-    color:  #20FA2A;
+    color:  var(--cor-tercearia);
     padding: 0.3%;
-    background-color: #000000;
-    border: 3px solid #20FA2A;
+    background-color: var(--cor-primaria);
+    border: 3px solid var(--cor-tercearia);
     border-radius: 5px;
     text-decoration: none;
 
 }
 .cabecalho_menu_link:hover{
-    background-color: #272727;
+    background-color: var(--cor-hover);
     padding: 0.2%;
-    border: 3px double #20FA2A;
+    border: 3px double var(--cor-tercearia);
     box-sizing: border-box;
+}
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-hover);
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
 }
